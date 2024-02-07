@@ -9,5 +9,5 @@ class YamlDependencyNode(FileDependencyNode):
     """
 
     def load_object(self):
-        content,encoding = self.file.get_content()
-        return config.get_parser("yaml").parse(content)
+        content, encoding = self.file.get_content(check_store=hasattr(self, "scaffold"))
+        return config.get_parser("yaml").parse(content)[0]
