@@ -1,5 +1,4 @@
 import yaml
-
 from bsb.config.parsers import Parser
 
 
