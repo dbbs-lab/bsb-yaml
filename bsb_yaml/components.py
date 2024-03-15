@@ -1,5 +1,6 @@
 from bsb import config
 from bsb.storage import FileDependencyNode
+
 from .parser import YAMLParser
 
 
