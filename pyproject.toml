@@ -9,7 +9,7 @@ readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 dynamic = ["version", "description"]
-dependencies = ["bsb-core>=4.0.0b4,<=4.0.0b9999", "PyYAML~=6.0"]
+dependencies = ["bsb-core==4.0.0rc2", "PyYAML~=6.0"]
 
 [project.entry-points."bsb.config.parsers"]
 yaml = "bsb_yaml.parser"
@@ -21,7 +21,7 @@ yaml_templates = "bsb_yaml.templates"
 name = "bsb_yaml"
 
 [project.optional-dependencies]
-test = ["bsb-core[parallel]", "bsb-test>=0.0.0b7,<=0.0.0b9999", "coverage~=7.0"]
+test = ["bsb-core[parallel]", "bsb-test==4.0.0rc2", "coverage~=7.0"]
 dev = [
     "pre-commit~=3.5",
     "black~=23.11",
@@ -33,7 +33,7 @@ dev = [
 profile = "black"
 
 [tool.bumpversion]
-current_version = "0.0.0-b5"
+current_version = "4.0.0-rc2"
 parse = """(?x)
     (?P<major>0|[1-9]\\d*)\\.
     (?P<minor>0|[1-9]\\d*)\\.

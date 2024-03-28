@@ -4,4 +4,4 @@ YAML parser for the BSB framework.
 
 from .components import YamlDependencyNode
 
-__version__ = "0.0.0-b5"
+__version__ = "4.0.0-rc2"
