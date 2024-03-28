@@ -1,8 +1,8 @@
 import yaml
-from bsb.config.parsers import Parser
+from bsb import ConfigurationParser
 
 
-class YAMLParser(Parser):
+class YAMLConfigurationParser(ConfigurationParser):
     """
     Parser plugin class to parse YAML configuration files.
     """
@@ -25,7 +25,7 @@ class YAMLParser(Parser):
         return content, meta
 
     def generate(self, tree, pretty=False):
-        return yaml.dump(tree)
+        return yaml.dump(tree, indent=None if not pretty else 2)
 
 
-__plugin__ = YAMLParser
+__plugin__ = YAMLConfigurationParser

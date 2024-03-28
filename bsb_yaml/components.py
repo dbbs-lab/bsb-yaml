@@ -1,7 +1,6 @@
-from bsb import config
-from bsb.storage import FileDependencyNode
+from bsb import FileDependencyNode, config
 
-from .parser import YAMLParser
+from .parser import YAMLConfigurationParser
 
 
 @config.node
@@ -12,4 +11,4 @@ class YamlDependencyNode(FileDependencyNode):
 
     def load_object(self):
         content, encoding = self.file.get_content(check_store=hasattr(self, "scaffold"))
-        return YAMLParser().parse(content)[0]
+        return YAMLConfigurationParser().parse(content)[0]

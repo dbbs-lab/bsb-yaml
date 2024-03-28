@@ -11,5 +11,5 @@ jobs:
         with:
           python-version: 3.9
       # Install dependencies for proper 1st/2nd/3rd party import sorting
-      - run: pip install -e .[parallel]
+      - run: pip install -e .
       - uses: isort/isort-action@master

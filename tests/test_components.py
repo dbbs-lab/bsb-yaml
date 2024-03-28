@@ -1,8 +1,7 @@
 import pathlib
 import unittest
 
-from bsb import config
-from bsb.exceptions import CastError
+from bsb import CastError, config
 
 from bsb_yaml.components import YamlDependencyNode
 
