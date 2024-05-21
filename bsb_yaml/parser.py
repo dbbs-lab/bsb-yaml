@@ -1,8 +1,8 @@
 import yaml
-from bsb import ConfigurationParser
+from bsb.config.parsers import ConfigurationParser, ParsesReferences
 
 
-class YAMLConfigurationParser(ConfigurationParser):
+class YAMLConfigurationParser(ParsesReferences, ConfigurationParser):
     """
     Parser plugin class to parse YAML configuration files.
     """
