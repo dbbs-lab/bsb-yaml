@@ -9,7 +9,7 @@ readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 dynamic = ["version", "description"]
-dependencies = ["bsb-core~=4.0", "PyYAML~=6.0"]
+dependencies = ["bsb-core~=4.1", "PyYAML~=6.0"]
 
 [project.entry-points."bsb.config.parsers"]
 yaml = "bsb_yaml.parser"
