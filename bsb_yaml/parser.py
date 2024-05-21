@@ -11,6 +11,15 @@ class YAMLConfigurationParser(ParsesReferences, ConfigurationParser):
     data_extensions = ("yaml", "yml")
 
     def parse(self, content, path=None):
+        """
+        Parse the YAML
+
+        :param content: File contents
+        :type content: str
+        :param path: Path the content came from
+        :type path: str
+        """
+
         content = yaml.safe_load(content)
         meta = {"path": path}
         return content, meta
