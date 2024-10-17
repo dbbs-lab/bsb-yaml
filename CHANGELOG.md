@@ -1,3 +1,8 @@
+## [v4.2.1] - 2024-10-17
+### :bug: Bug Fixes
+- [`24cb6ed`](https://github.com/dbbs-lab/bsb-yaml/commit/24cb6edfbb782227daba05cc6f51723d75d83eb0) - Update configuration templates, remove ParticlePlacement *(PR [#6](https://github.com/dbbs-lab/bsb-yaml/pull/6) by [@drodarie](https://github.com/drodarie))*
+
+
 ## [v4.2.0] - 2024-10-08
 ### :sparkles: New Features
 - [`0517f7c`](https://github.com/dbbs-lab/bsb-yaml/commit/0517f7c9115f35f7a856be23db93ddafef6e09e7) - implement auto-release GHA and conventional commits. *(PR [#5](https://github.com/dbbs-lab/bsb-yaml/pull/5) by [@drodarie](https://github.com/drodarie))*
@@ -17,3 +22,4 @@
 
 [v4.1.0]: https://github.com/dbbs-lab/bsb-yaml/compare/v4.0.0...v4.1.0
 [v4.2.0]: https://github.com/dbbs-lab/bsb-yaml/compare/v4.1.0...v4.2.0
+[v4.2.1]: https://github.com/dbbs-lab/bsb-yaml/compare/v4.2.0...v4.2.1
