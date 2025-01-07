@@ -9,7 +9,7 @@ readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 dynamic = ["version", "description"]
-dependencies = ["bsb-core~=4.1", "PyYAML~=6.0"]
+dependencies = ["bsb-core~=5.0", "PyYAML~=6.0"]
 
 [project.entry-points."bsb.config.parsers"]
 yaml = "bsb_yaml.parser"
@@ -21,7 +21,7 @@ yaml_templates = "bsb_yaml.templates"
 name = "bsb_yaml"
 
 [project.optional-dependencies]
-test = ["bsb-core[parallel]", "bsb-test~=4.0", "coverage~=7.0"]
+test = ["bsb-core[parallel]~=5.0", "bsb-test~=4.0", "coverage~=7.0"]
 dev = [
     "bsb-yaml[test]",
     "build~=1.0",
